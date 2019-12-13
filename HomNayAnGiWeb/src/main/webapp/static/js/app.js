@@ -1,16 +1,40 @@
-mybutton = document.getElementById("top");
+$(function () {
+  //Check to see if the window is top if not then display button
 
-window.onscroll = function() {scrollFunction()};
+  $(window).scroll(function () {
+    if ($(this).scrollTop() < 100) {
+      $('#scroll_to_top').fadeOut();
+    } else if ($(this).scrollTop() > 200) {
 
-function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
+      $('#scroll_to_top').fadeIn(100);
     }
-  }
-  
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  });
+
+  //Click event to scroll to top
+  $('#scroll_to_top').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 800);
+    return false;
+  });
+
+  $('.content').infiniteScroll()({
+    path: '.pagination__next',
+    append: '.post',
+    history: false,
+  });
+});
+
+// var infiniteScroll = new InfiniteScroll('.container', {
+//   initialize: function () {
+//     document.addEventListener("scroll", this.handleScroll);
+//     this.loadStuff('data.json');
+//   },
+
+//   handleScroll: function () {
+
+//     if (document.getElementById("content").scrollTop + parseInt(document.getElementById("content").style.height, 10) >= document.getElementById("products").scrollHeight) {
+//       //logic when user has scrolled to the bottom of the page
+//       ++infiniteScroll.data.currentPage;
+//       infiniteScroll.loadStuff('data.json');
+//     }
+//   }
+// })

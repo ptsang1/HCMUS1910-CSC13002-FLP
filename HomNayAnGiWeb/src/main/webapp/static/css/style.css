@@ -23,31 +23,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: calc(100vh - 2 * 4vw);}
-  .top {
-    background-color: #fff;
-    border-radius: 6px 6px 0px 0px;
-    overflow: hidden;
-    box-shadow: 0 2rem 6rem 0.5rem rgba(177, 163, 158, 0.2);
-    position:fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-  }
-    @media only screen and (max-width: 68.75em) {
+ 
+    /* @media only screen and (max-width: 68.75em) {
       .top {
         left: 0;
         width: 100%;
         margin: 0;
-        border-radius: 0; } }
+        border-radius: 0; } } */
   .container {
     background-color: #fff;
-    max-width: 100rem;
-    margin-left: 160px;
-    margin-top: 80px;
-    margin-right: 0px;
+    width: auto;
     padding: 20px;
-    border-radius: 0px 0px 0px 6px;
     columns: 2;
+    
     column-gap: 20px;
   }
   .btn, .btn-small, .btn-small:link, .btn-small:visited {
@@ -183,7 +171,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: 20px;
+    padding: 15px;
+    border-radius: 6px 6px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0 2rem 6rem 0.5rem rgba(177, 163, 158, 0.2);
+    position:fixed;
+    top: 0px;
+    width: 100%;
   }
     .header__logo {
       margin-left: 160px;
@@ -252,7 +246,8 @@
       margin-bottom: 10px;
     }
     .post-img {
-      max-width: 100%;
+      width: 100%;
+      height: auto;
     }
     .post-body ul{
       padding: 0px;
@@ -278,16 +273,26 @@
     }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 80% auto;
 }
 .filter {
   background-color: #fff;
-  max-width: 20rem;
-  margin-left: -180px;
-  margin-top: 80px;
-  border-radius: 0px 0px 6px 0px;
+  width: auto;
 }
-@media only screen and (max-width: 68.75em)
+#content {
+  margin: 75px auto;
+  width: 80%;
+}
+
+.page-load-status {
+  display: block; /* hidden by default */
+  padding-top: 20px;
+  border-top: 1px solid #DDD;
+  text-align: center;
+  color: #777;
+}
+
+@media only screen and (max-width: 50rem)
 {
   .container {
     columns: 1;
