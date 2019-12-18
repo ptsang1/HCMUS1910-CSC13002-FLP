@@ -10,5 +10,9 @@ def loadHomePage():
 def loadAddNewPost():
     return render_template("writerecipe.html")
 
+@app.route('/signin')
+def loadSigninPage():
+    return render_template("login.html")
+
 if __name__ == '__main__':
     app.run()

@@ -183,7 +183,11 @@
       margin-left: 160px;
       height: 4.5rem;
       display: block; }
-  
+
+.wrap-login100 form .header__logo{
+    margin-left: 80px;
+  }
+
   .search {
     background-color: #fff;
     border-radius: 10rem;
