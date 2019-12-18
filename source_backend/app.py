@@ -1,11 +1,17 @@
-from flask import Flask
+from flask import Flask,render_template,redirect,url_for,request
 from flask_restful import Resource,Api,reqparse
 from flask_jwt import JWT,jwt_required
 
 from security import authenicate, indentity
 from user import UserRegister
 
-app = Flask(__name__)
+import os
+APP_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TEMPLATE_PATH = os.path.join(APP_PATH, './source_frontend/templates/')
+STATIC_DIR = os.path.join(APP_PATH, './source_frontend/static/')
+
+app = Flask(__name__,template_folder=TEMPLATE_PATH,static_folder=STATIC_DIR)
+print(app.template_folder)
 app.secret_key = "Ма́ша и Медве́дь"
 api = Api(app)
 
@@ -49,10 +55,20 @@ class Item(Resource):
 class ItemList(Resource):
     def get(self):
         return{'item':items}
+class CheckOn(Resource):
+    def get(self):
+        return{'message':app.root_path},404
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    error = None
+    return render_template('login.html', error=error)
 
 api.add_resource(Item,'/item/<string:name>')
 api.add_resource(ItemList,'/items')
 api.add_resource(UserRegister,'/register')
+api.add_resource(CheckOn,'/helloworld')
 
 app.run(port=5000,debug=True)
     
