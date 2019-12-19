@@ -10,11 +10,11 @@ users=[
 (5,'vdquan','123456')
 ]
 
-def authenicate(username,pasword):
-    user= User.find_by_username(username)
+def authenicate(email,pasword):
+    user= User.find_by_email(email)
     if user and safe_str_cmp(user.password,pasword):
         return user
 
 def indentity(payload):
-    user_id = payload['indentity']
+    user_id = payload['identity']
     return User.find_by_id(user_id)
