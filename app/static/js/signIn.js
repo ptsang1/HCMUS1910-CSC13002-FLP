@@ -85,5 +85,15 @@
         
     });
 
+    $(':input').focus(function (){
+        let hasErr = false;
+        $('.err').each(function () {
+            $('.err').remove();
+            hasErr = true;
+        });
+        if (hasErr){
+            $($(':password')[0].parentElement).find('span').append('<i class="zmdi zmdi-eye"></i>')
+        }
+    });
 
 })(jQuery);

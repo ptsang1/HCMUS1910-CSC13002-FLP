@@ -1,6 +1,7 @@
 from app import app
 from flask import render_template, flash, redirect, url_for
-from app.forms import LoginForm
+from app.forms import LoginForm, SignupForm
+from app.models import Users
 
 @app.route('/')
 def loadHomePage():
@@ -12,7 +13,10 @@ def loadAddNewPost():
 
 @app.route('/signin', methods=['GET', 'POST'])
 def login():
+    # if current_user.is_authenticated:
+    #     return redirect(url_for('index'))
     form = LoginForm()
+    print(Users.query.all())
     if form.validate_on_submit():
         flash('Login requested for user {}, remember_me={}'.format(
             form.username.data, form.remember_me.data))
@@ -21,7 +25,9 @@ def login():
 
 @app.route('/signup')
 def signup():
-    return render_template("signup.html")
+    form = SignupForm()
+    print(form.gender)
+    return render_template("signup.html", form=form)
 
 
 if __name__ == '__main__':
