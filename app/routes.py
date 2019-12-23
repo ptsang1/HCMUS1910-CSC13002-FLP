@@ -4,9 +4,15 @@ from app.forms import LoginForm, SignupForm
 from app.models import Users
 from flask_login import current_user, login_user
 from app import db, bcrypt
-# from flask_login import login_required
+from flask_login import login_required
 from flask import request
 from werkzeug.urls import url_parse
+from flask_login import logout_user
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('loadHomePage'))
 
 @app.route('/')
 def loadHomePage():
