@@ -38,7 +38,6 @@ def signup():
     if current_user.is_authenticated:
         return redirect(url_for('loadHomePage'))
     form = SignupForm()
-    print(form.validate_on_submit(), "11111111111111111111111")
     if form.validate_on_submit():
         newUser = Users()
         newUser.userid = bcrypt.generate_password_hash(form.email.data)

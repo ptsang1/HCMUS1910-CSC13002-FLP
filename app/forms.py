@@ -5,7 +5,7 @@ from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, Le
 from app.models import Users, Genders
 
 class LoginForm(FlaskForm):
-    username = StringField('<i class="zmdi zmdi-account material-icons-name"></i>', validators=[DataRequired()])
+    username = StringField('<i class="zmdi zmdi-account material-icons-name"></i>', validators=[DataRequired(), Email()])
     password = PasswordField('<i class="zmdi zmdi-lock"></i>', validators=[DataRequired()])
     remember_me = BooleanField('<span></span>Ghi nhớ đăng nhập')
     submit = SubmitField("Đăng nhập")
