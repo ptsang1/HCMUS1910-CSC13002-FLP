@@ -85,6 +85,10 @@
         
     });
 
+    $('.err').each(function (){
+        $(this).parent().parent().find('input').val('');
+    });
+
     $(':input').focus(function (){
         let hasErr = false;
         $('.err').each(function () {

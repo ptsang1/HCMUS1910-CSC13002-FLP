@@ -11,10 +11,9 @@ bcrypt = Bcrypt(app)
 
 app.config.from_object(Config)
 db = SQLAlchemy(app)
-db.create_all()
+migrate = Migrate(app, db)
 login = LoginManager(app)
 login.login_view = 'login'
 mail = Mail(app)
-migrate = Migrate(app, db)
 
 from app import routes, models

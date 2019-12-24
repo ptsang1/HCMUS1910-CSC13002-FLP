@@ -1,6 +1,14 @@
+from flask import render_template
 from flask_mail import Message
 from app import app, mail
 from itsdangerous import URLSafeTimedSerializer
+from app.decorators import asyncF
+
+@asyncF
+def send_async_email(app, msg):
+    with app.app_context():
+        mail.send(msg)
+
 
 def generate_confirmation_token(email):
     serializer = URLSafeTimedSerializer(app.config['SECRET_KEY'])
@@ -26,4 +34,4 @@ def send_email(to, subject, template):
         html=template,
         sender=app.config['MAIL_DEFAULT_SENDER']
     )
-    mail.send(msg)
+    send_async_email(app, msg)

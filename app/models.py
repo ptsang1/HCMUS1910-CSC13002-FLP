@@ -2,8 +2,7 @@ from app import db
 from app import bcrypt
 from flask_login import UserMixin
 from app import login
-import uuid
-
+from uuid import uuid1
 class Roles(db.Model):
     __tablename__ = 'roles'
     roleid = db.Column(db.INT, primary_key=True)
@@ -39,14 +38,25 @@ class Users(UserMixin, db.Model):
     def set_password(self, password):
         self.password = (bcrypt.generate_password_hash(password, 10)).decode("utf8")
 
-    def set_userID(self, email):
-        self.userid = (bcrypt.generate_password_hash(email, 10)).decode("utf8")
+    def set_userID(self):
+        self.userid = str(uuid1())
 
     def check_password(self, password):
         return bcrypt.check_password_hash(self.password, password)
 
     def get_id(self):
         return self.userid
+
+    def set_inf(self, email, password, fullname, genderid, birthday):
+        self.email = email
+        self.fullname = fullname
+        self.genderid = genderid
+        self.birthday = birthday
+        self.set_password(password)
+        self.roleid = 1
+        self.confirmed = False
+        self.set_userID()
+
 
 class Recipe_Posts(db.Model):
     __tablename__ = "recipe_posts"
