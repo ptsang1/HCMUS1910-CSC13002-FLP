@@ -2,18 +2,20 @@
 
 {% block content %}
         <div class="container">
+             {% for post in posts %}
                 <div class="post">
-                    <h2>Username</h2>
-                    <img class="post-img" src="../static/img/ct.jpg" alt="Card image">
+                    <h2>{{post.ownerid}}</h2>
+                    <img class="post-img" src="{{post.image}}" alt="Card image">
                     <div class="post-body">
                         <ul class="post-react flex flex-wrap align-items-center">
                             <li><a href=""><i class="fa fa-heart-o fa-3x"></i></a></li>
                             <li><a href=""><i class="fa fa-comments-o fa-3x"></i></a></li>
                             <li><a href=""><i class="fa fa-share-alt fa-3x"></i></a></li>
                         </ul>
-                        <h1 class="post-content">Cơm tấm</h1>
+                        <h1 class="post-content">{{post.foodname}}</h1>
                     </div>
                 </div>
+             {% endfor%}
                 <div class="post">
                     <h2>Username</h2>
                     <img class="post-img" src="../static/img/bb.jpg" alt="Card image" style="width:100%">

@@ -2,6 +2,7 @@ from app import db
 from app import bcrypt
 from flask_login import UserMixin
 from app import login
+import uuid
 
 class Roles(db.Model):
     __tablename__ = 'roles'
@@ -30,6 +31,7 @@ class Users(UserMixin, db.Model):
     genderid = db.Column(db.BOOLEAN, db.ForeignKey('genders.genderid'))
     birthday = db.Column(db.DATE)
     avatarlink = db.Column(db.VARCHAR(100))
+    confirmed = db.Column(db.BOOLEAN)
 
     def __repr__(self):
         return '<User {}>'.format(self.email)
@@ -50,10 +52,10 @@ class Recipe_Posts(db.Model):
     __tablename__ = "recipe_posts"
     ownerid = db.Column(db.VARCHAR(100), db.ForeignKey('users.userid'), primary_key=True)
     postid = db.Column(db.INT, primary_key=True)
-    typeid = db.Column(db.INT)
     description = db.Column(db.TEXT)
     ingredients = db.Column(db.TEXT)
     image = db.Column(db.VARCHAR(100))
+    foodname = db.Column(db.NVARCHAR(50))
 
 class Posts_Saved_By_Users(db.Model):
     __tablename__ = "posts_saved_by_users"

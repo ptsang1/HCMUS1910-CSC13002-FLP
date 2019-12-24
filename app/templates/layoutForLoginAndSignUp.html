@@ -16,12 +16,13 @@
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
-            <div style="text-align: center;" class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
-                <span>{{ message }}</span>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+        <p class="alert" style="display: none">{{message}}</p>
+<!--            <div style="text-align: center;" class="alert alert-{{ category }} alert-dismissible fade show" role="alert">-->
+<!--                <span>{{ message }}</span>-->
+<!--                <button type="button" class="close" data-dismiss="alert" aria-label="Close">-->
+<!--                <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
         {% endfor %}
         {% endif %}
         {% endwith %}

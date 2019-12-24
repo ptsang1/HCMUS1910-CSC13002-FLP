@@ -96,4 +96,9 @@
         }
     });
 
+    $('.alert').each(function () {
+        alert($(this).text());
+        $(this).remove();
+    })
+
 })(jQuery);
