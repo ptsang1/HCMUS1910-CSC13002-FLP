@@ -489,6 +489,7 @@ form button.remove:hover {
   margin-left: 10px;
 }
 .uploadImg {
+  position: relative;
   background-color: rgb(231, 227, 225); 
   width: 85%;
   margin: 0 auto;
@@ -496,8 +497,11 @@ form button.remove:hover {
   font-family: inherit;
   font-size: 20px;
   height: 350px;
+  cursor: pointer;
 }
-  
+.uploadImg:hover .fileInput {
+  display: block;
+}
 .upload_content {
   text-align: center;
   padding: 120px;
@@ -508,13 +512,16 @@ form button.remove:hover {
 }
 
 .fileInput {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  display: none;  
   border-bottom: 4px solid lightgray;
   border-right: 4px solid lightgray;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  padding: 10px;
-  margin: 15px;
-  cursor: pointer;
 }
 .imgPreview {
   text-align: center;

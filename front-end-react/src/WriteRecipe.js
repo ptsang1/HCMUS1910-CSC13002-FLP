@@ -11,20 +11,20 @@ class WriteRecipe extends React.Component {
             file: '',
             imagePreviewUrl: '',
         };
-        this.fileSelector;
+        // this.fileSelector;
     }
 
     // showOpenFileDlg = () => {
     //     this.inputRef.current.click()
     // }
 
-    componentDidMount (){
-        this.fileSelector = this.buildFileSelector();
-      }
-    handleFileSelect = (e) => {
-        e.preventDefault();
-        this.fileSelector.click();
-      }
+    // componentDidMount (){
+    //     this.fileSelector = this.buildFileSelector();
+    //   }
+    // handleFileSelect = (e) => {
+    //     e.preventDefault();
+    //     this.fileSelector.click();
+    //   }
 
     _handleSubmit(e) {
         e.preventDefault();
@@ -45,7 +45,6 @@ class WriteRecipe extends React.Component {
             });
         }
         reader.readAsDataURL(file)
-        console.log(this.imagePreviewUrl)
     }
 
 
@@ -72,7 +71,7 @@ class WriteRecipe extends React.Component {
     }
 
     handleStepNameChange = (idx) => (evt) => {
-        const newSteps = this.state.Steps.map((item, sidx) => {
+        const newSteps = this.state.steps.map((item, sidx) => {
             if (idx !== sidx) return item;
             return { ...item, name: evt.target.value };
         });
@@ -88,31 +87,32 @@ class WriteRecipe extends React.Component {
         this.setState({ steps: this.state.steps.filter((s, sidx) => idx !== sidx) });
     }
 
-    buildFileSelector() {
-        const fileSelector = document.createElement('input');
-        fileSelector.setAttribute('type', 'file');
-        fileSelector.setAttribute('multiple', 'multiple');
-        return fileSelector;
-    }
+    // buildFileSelector() {
+    //     const fileSelector = document.createElement('input');
+    //     fileSelector.setAttribute('type', 'file');
+    //     fileSelector.setAttribute('multiple', 'multiple');
+    //     return fileSelector;
+    // }
 
     render() {
         let { imagePreviewUrl } = this.state;
         let $imagePreview = null;
         if (imagePreviewUrl) {
-            $imagePreview = (<div className="uploadImg"  onChange={(e) => this._handleImageChange(e)}>
+            $imagePreview = (<div className="uploadImg" onChange={(e) => this._handleImageChange(e)}>
             <img src={imagePreviewUrl} /> 
+            <input className="fileInput"
+                            type="file"
+                            onChange={(e) => this._handleImageChange(e)} />
         </div> );
         } else {
             $imagePreview = (
-            <div className="uploadImg"  onChange={(e) => this._handleImageChange(e)}>
+            <div className="uploadImg" onChange={(e) => this._handleImageChange(e)}>
                 <div className="upload_content">
                     <img className="icon" src={require("./img/food.png")} alt="" />
                     <p>Chia sẻ một bức ảnh về thành quả của bạn</p>
                     <input className="fileInput"
-                                type="file"
-                                onChange={(e) => this._handleImageChange(e)} 
-                                // ref={this.inputRef}
-                                style={{display: 'block'}}/>
+                            type="file"
+                            onChange={(e) => this._handleImageChange(e)} />
                 </div>
             </div> );
         }
@@ -125,16 +125,13 @@ class WriteRecipe extends React.Component {
                             <p>Chia sẻ một bức ảnh về thành quả của bạn</p>
                         </div>
                         {$imagePreview}
-
                     </div> */}
                     <div className="previewComponent">
                         <form onSubmit={(e) => this._handleSubmit(e)}>
                             {$imagePreview}
-                            <input className="fileInput"
+                            {/* <input className="fileInput"
                                 type="file"
-                                onChange={(e) => this._handleImageChange(e)} 
-                                // ref={this.inputRef}
-                                style={{display: 'none'}}/>
+                                onChange={(e) => this._handleImageChange(e)} /> */}
                         </form>                       
                     </div>
                     <form className="input">
@@ -171,7 +168,8 @@ class WriteRecipe extends React.Component {
                                     />
                                     <button type="button" onClick={this.handleStepRemove(idx)} className="btn remove">-</button>
                                     </div>
-                                    <div className="stepImages"><i className="fa fa-camera-retro"></i></div>
+                                    <div className="stepImages"><i className="fa fa-camera-retro"></i>
+                                    </div>
                                 </div>
                             ))}
                             <div onClick={this.handleStepAdd} className="add">+ Bước tiếp theo</div>
