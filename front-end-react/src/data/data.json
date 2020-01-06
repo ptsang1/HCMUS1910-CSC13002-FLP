@@ -1,84 +1,369 @@
     [
         {
-            "post_id": 1,
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
-            "username": "Nguyên Bùi",
-            "name": "Thịt chó",
-            "img": ["https://upload.wikimedia.org/wikipedia/commons/0/0a/OffHN_10_2008_1.jpg"]
-        },
-        {
-            "post_id": 2,
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
-            "username": "Nguyên Bùi",
-            "name": "Bún chả",
-            "img": ["https://upload.wikimedia.org/wikipedia/commons/0/06/Bun_cha.jpg"]
-        },
-        {
-            "post_id": 3,
             "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
             "username": "Sang Phùng",
             "name": "Gỏi cuốn",
-            "img": ["https://upload.wikimedia.org/wikipedia/commons/3/31/Vietnamese_salad_roll.jpg"]
-        },  
-        {
-            "post_id": 4,
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
-            "username": "Kiên Nguyễn",
-            "name": "Bún bò Huế",
-            "img": ["https://upload.wikimedia.org/wikipedia/commons/e/e7/B%C3%BAn_b%C3%B2_hu%C3%AA_close-up_-_Dakao_Hoang.jpg"]
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/31/Vietnamese_salad_roll.jpg"
+            ],
+            "ingredients": [
+                "500g tôm",
+                "700g thịt ba rọi hoặc đùi (tùy thích mỡ nhiều hay nạc nhiều)",
+                "Bánh tráng",
+                "500g bún tươi",
+                "Tương hột xay",
+                "Xà-lách, rau sống, hẹ",
+                "Đồ chua, đậu phộng rang giã nhuyễn"
+            ],
+            "steps": [
+                "Rau sống rửa sạch, để ráo",
+                "Tôm rửa sạch, cho vào 1/2 muỗng cafe muối, 1 muỗng cafe đường, 1-2 muỗng canh rượu (không cần cho nước, tôm sẽ tự ra nước). Việc thêm gia vị giúp tôm đậm đà và không tanh. Đậy nắp, mở lửa nấu cho tôm chuyển đỏ, đảo đều. Vớt tôm ra rổ để ráo. Lột vỏ, xẻ đôi tôm, bỏ chỉ lưng.",
+                "Thịt cạo lông, rửa sạch, cho đun sôi nồi nước, thả vào 1 củ hành đập dập, cho thịt vào luộc chừng 20 phút là thịt chín, vớt thịt ra thau nước lạnh giúp thịt trắng và giòn.Thái thịt thành lắt mỏng.",
+                "Cuốn: Làm ướt bánh tráng, lót rau bên dưới, xếp bún, thịt, tôm, đặt cọng hẹ trang trí (vừa thơm, vừa đẹp). Cuộn chắc tay.",
+                "Làm tương: Phi thơm ít tỏi với dầu, cho tương hột xay vào xào, nêm đường cho bớt mặn."
+            ]
         },
         {
-            "post_id": 5,
+            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Nguyên Bùi",
+            "name": "Bún chả",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/06/Bun_cha.jpg"
+            ],
+            "ingredients": [
+                "500 gram thịt ba chỉ",
+                "400 gram thịt nạc vai",
+                "Chanh, ớt, tỏi, hành tím, đầu hành",
+                "Su hào, cà rốt",
+                "Gia vị: tiêu, nước hàng, xì dầu đen, dầu hào, nước mắm, dầu ăn, nước tương, mật ong",
+                "Rau thơm, bún"
+            ],
+            "steps": [
+                "Sơ chế: Thịt ba chỉ thái thành những miếng vừa ăn. Thịt nạc vai đem thái mỏng và băm rối. Hành tím, đầu hành, tỏi đập dập, băm nhuyễn rồi chia thành đôi, cho vào 2 phần thịt lợn.",
+                "Trộn đều để cho các gia vị thấm sâu rồi cho vào tủ lạnh để trong khoảng 3 – 4 tiếng. Phần thịt vai băm, bạn làm thành hình tròn dẹt rồi đem nướng chín. Phần thịt ba thái miếng vừa ăn cũng vậy.",
+                "Cà rốt, su hào gọt vỏ rồi rửa sạch, để ráo. Cà rốt thái tròn mỏng, su hào thái vuông mỏng. Sau đó, cho chung vào một âu và cùng 1 chút muối ăn rồi xóc đều. Ngâm cà rốt, su hào với muối trong khoảng 15 – 20 phút. Sau đó, đem rửa sạch rồi để ráo nước. Cho ½ muỗng canh tỏi băm, ½ muỗng canh giấm, 2 muỗng canh đường rồi đảo đều đến khi đường tan rồi cho thêm chút ớt băm vào",
+                "Các loại rau thơm bạn đem ngâm với nước muối loãng trong chừng 10 – 15 phút. Sau đó, đem rửa sạch rồi cho ra rổ để ráo nước.",
+                "Làm nước dùng: Chuẩn bị một bát nhỏ, múc 10 thìa canh nước lọc và cho 2 thìa canh đường, 2 thìa canh nước mắm vào khuấy đều cho đến khi đường tan. Tiếp tục cho 3 muỗng canh nước cốt chanh, 1 muỗng canh đường, 1 muỗng cà phê tỏi băm, 1 muỗng cà phê ớt rồi khuấy đều lên."
+            ]
+        },
+        {
             "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
             "username": "Nguyên Bùi",
             "name": "Thịt chó",
-            "img": ["https://upload.wikimedia.org/wikipedia/commons/0/0a/OffHN_10_2008_1.jpg"]
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0a/OffHN_10_2008_1.jpg"
+            ],
+            "ingredients": [
+                "Chó"
+            ],
+            "steps": [
+                "Chó là bạn, không phải mày"
+            ]
         },
         {
-            "post_id": 6,
+            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Kiên Nguyễn",
+            "name": "Bún bò Huế",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/e7/B%C3%BAn_b%C3%B2_hu%C3%AA_close-up_-_Dakao_Hoang.jpg"
+            ],
+            "ingredients": [
+                "Xương đuôi bò: 1kg",
+                "Chân giò trước: 1 cái khoảng 800 gram",
+                "Thịt bò nạm: 400 gram",
+                "Bún sợi to: 2.5kg",
+                "Hành tây: 2 củ, hành tím: 2 củ, sả: 1 bó, chanh, ớt tươi, mía lau: 1 cây",
+                "Mắm ruốc: 2 muỗng, bột hột điều dầu: 1 thìa, muối, nước mắm, mỡ, ớt bột, dầu ăn",
+                "Bắp chuối bào, hành lá, giá sống, ngò gai"
+            ],
+            "steps": [
+                "Mang chân giò heo cạo sạch lông và gỡ bỏ phần móng bên ngoài rồi rửa sạch. Thịt bò cũng rửa qua với nước. Chuẩn bị một âu nước rồi cho muối hột vào hòa tan. Sau đó, cho chân giò cùng thịt bò đã được sơ chế ở trên vào ngâm khoảng 1 – 2 tiếng để làm sạch hiệu quả.",
+                "Mía rửa sạch lớp vỏ bên ngoài, dùng dao chặt thành từng khúc khoảng chừng 3 đốt tay rồi chẻ làm tư. Sau đó, cho vào nồi đun cùng với 3 lít nước trong chừng 30 phút rồi vớt ra.",
+                "Đun 1 lít nước trong một nồi riêng rồi cho 2 muỗng canh mắm ruốc vào quậy đều. Khi nước sôi, bạn vớt hết bọt nổi trên mặt nước rồi tắt bếp, để nguội và đợi lắng nước trong.",
+                "Sả rửa sạch, dùng dao đập dập rồi chẻ làm 2. Sau đó, dùng dây lạt bó lại. Gừng và hành tím đem nướng cháy xém vỏ trên lửa than rồi cạo sạch và đập dập.",
+                "Chân giò sau khi ngâm với nước muối đủ thời gian thì vớt ra và rửa lại với nước lạnh. Sau đó, chặt thành những khúc vừa ăn.",
+                "Thắng dầu màu: Đặt một chảo nhỏ lên bếp, đổ 2 muỗng canh dầu ăn vào đun sôi. Sau đó, tắt bếp và cho hành tím băm nhuyễn cùng ớt bột vào phi vàng. Cuối cùng, vớt bỏ phần xác ớt bột ra để riêng.",
+                "Nấu nước dùng: Đặt nồi nước hầm mía lên bếp. Cho thêm ½ bó sả và ½ muỗng cafe muối cùng gừng, sả, hành và nước ruốc vào. Trụng xương đuôi bò qua nước sôi rồi cho vào nồi hầm nước mía ninh cùng phần thịt chân giò trong khoảng 1 – 2 tiếng. Bắp và nạm bò cuộn tròn chắc tay rồi dùng chỉ hoặc lạt buộc chặt lại và thả vào nồi nước dùng để nấu chín. Phần thịt nào chín thì bạn vớt ra trước, tránh để lâu thịt sẽ bị nhừ, ăn không ngon miệng. Cuối cùng, cho dầu màu vào và nêm nếm nước dùng cho vừa miệng rồi tắt bếp.",
+                "Cho bún, chân giò, thịt bò nạm thái mỏng, chả lụa cắt lát, hành lá, hành tây vào từng tô. Sau đó, dọn ra cùng một chén nước mắm, vài lát chanh và dĩa rau sống rồi mời mọi người thưởng thức."
+            ]    
+        },
+        {
+            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Nguyên Bùi",
+            "name": "Thịt chó",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0a/OffHN_10_2008_1.jpg"
+            ],
+            "ingredients": [
+                "Chó"
+            ],
+            "steps": [
+                "Chó là bạn, không phải mày"
+            ]
+        },
+        {
             "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
             "username": "Nguyên Bùi",
             "name": "Canh chua",
-            "img": ["https://upload.wikimedia.org/wikipedia/commons/a/a0/Canhchua2.jpg"]
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a0/Canhchua2.jpg"
+            ],
+            "ingredients": [
+                "Cá",
+                "Tôm",
+                "Cà chua",
+                "Đậu bắp",
+                "Me",
+                "Giá đỗ",
+                "Hành lá, rau ngổ",
+                "Gia vị: hành khô, tỏi, muối, hạt nêm, bột ngọt, đường, ớt bột, tiêu, nước mắm, dầu ăn."
+            ],
+            "steps": [
+                "Bỏ hết vô nấu lên"
+            ]
         },
         {
-            "post_id": 9,
             "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
             "username": "Nguyên Bùi",
-            "name": "Lau tum lum",
-            "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/Foodimg/7a0dd01c-298f-11ea-bc42-3c15c2d9b720.jpg"]
+            "name": "Thịt chó",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0a/OffHN_10_2008_1.jpg"
+            ],
+            "ingredients": [
+                "Chó"
+            ],
+            "steps": [
+                "Chó là bạn, không phải mày"
+            ]
         },
         {
-            "post_id": 8,
             "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
-            "name": "Lau tum lum",
-            "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/Foodimg/7a0dd01c-298f-11ea-bc42-3c15c2d9b720.jpg"]
+            "username": "Nguyên Bùi",
+            "name": "Bún chả",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/06/Bun_cha.jpg"
+            ],
+            "ingredients": [
+                "500 gram thịt ba chỉ",
+                "400 gram thịt nạc vai",
+                "Chanh, ớt, tỏi, hành tím, đầu hành",
+                "Su hào, cà rốt",
+                "Gia vị: tiêu, nước hàng, xì dầu đen, dầu hào, nước mắm, dầu ăn, nước tương, mật ong",
+                "Rau thơm, bún"
+            ],
+            "steps": [
+                "Sơ chế: Thịt ba chỉ thái thành những miếng vừa ăn. Thịt nạc vai đem thái mỏng và băm rối. Hành tím, đầu hành, tỏi đập dập, băm nhuyễn rồi chia thành đôi, cho vào 2 phần thịt lợn.",
+                "Trộn đều để cho các gia vị thấm sâu rồi cho vào tủ lạnh để trong khoảng 3 – 4 tiếng. Phần thịt vai băm, bạn làm thành hình tròn dẹt rồi đem nướng chín. Phần thịt ba thái miếng vừa ăn cũng vậy.",
+                "Cà rốt, su hào gọt vỏ rồi rửa sạch, để ráo. Cà rốt thái tròn mỏng, su hào thái vuông mỏng. Sau đó, cho chung vào một âu và cùng 1 chút muối ăn rồi xóc đều. Ngâm cà rốt, su hào với muối trong khoảng 15 – 20 phút. Sau đó, đem rửa sạch rồi để ráo nước. Cho ½ muỗng canh tỏi băm, ½ muỗng canh giấm, 2 muỗng canh đường rồi đảo đều đến khi đường tan rồi cho thêm chút ớt băm vào",
+                "Các loại rau thơm bạn đem ngâm với nước muối loãng trong chừng 10 – 15 phút. Sau đó, đem rửa sạch rồi cho ra rổ để ráo nước.",
+                "Làm nước dùng: Chuẩn bị một bát nhỏ, múc 10 thìa canh nước lọc và cho 2 thìa canh đường, 2 thìa canh nước mắm vào khuấy đều cho đến khi đường tan. Tiếp tục cho 3 muỗng canh nước cốt chanh, 1 muỗng canh đường, 1 muỗng cà phê tỏi băm, 1 muỗng cà phê ớt rồi khuấy đều lên."
+            ]
         },
         {
-            "post_id": 7,
             "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Sang Phùng",
+            "name": "Gỏi cuốn",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/31/Vietnamese_salad_roll.jpg"
+            ],
+            "ingredients": [
+                "500g tôm",
+                "700g thịt ba rọi hoặc đùi (tùy thích mỡ nhiều hay nạc nhiều)",
+                "Bánh tráng",
+                "500g bún tươi",
+                "Tương hột xay",
+                "Xà-lách, rau sống, hẹ",
+                "Đồ chua, đậu phộng rang giã nhuyễn"
+            ],
+            "steps": [
+                "Rau sống rửa sạch, để ráo",
+                "Tôm rửa sạch, cho vào 1/2 muỗng cafe muối, 1 muỗng cafe đường, 1-2 muỗng canh rượu (không cần cho nước, tôm sẽ tự ra nước). Việc thêm gia vị giúp tôm đậm đà và không tanh. Đậy nắp, mở lửa nấu cho tôm chuyển đỏ, đảo đều. Vớt tôm ra rổ để ráo. Lột vỏ, xẻ đôi tôm, bỏ chỉ lưng.",
+                "Thịt cạo lông, rửa sạch, cho đun sôi nồi nước, thả vào 1 củ hành đập dập, cho thịt vào luộc chừng 20 phút là thịt chín, vớt thịt ra thau nước lạnh giúp thịt trắng và giòn.Thái thịt thành lắt mỏng.",
+                "Cuốn: Làm ướt bánh tráng, lót rau bên dưới, xếp bún, thịt, tôm, đặt cọng hẹ trang trí (vừa thơm, vừa đẹp). Cuộn chắc tay.",
+                "Làm tương: Phi thơm ít tỏi với dầu, cho tương hột xay vào xào, nêm đường cho bớt mặn."
+            ]
+        },
+        {
+            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Nguyên Bùi",
+            "name": "Bún chả",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/06/Bun_cha.jpg"
+            ],
+            "ingredients": [
+                "500 gram thịt ba chỉ",
+                "400 gram thịt nạc vai",
+                "Chanh, ớt, tỏi, hành tím, đầu hành",
+                "Su hào, cà rốt",
+                "Gia vị: tiêu, nước hàng, xì dầu đen, dầu hào, nước mắm, dầu ăn, nước tương, mật ong",
+                "Rau thơm, bún"
+            ],
+            "steps": [
+                "Sơ chế: Thịt ba chỉ thái thành những miếng vừa ăn. Thịt nạc vai đem thái mỏng và băm rối. Hành tím, đầu hành, tỏi đập dập, băm nhuyễn rồi chia thành đôi, cho vào 2 phần thịt lợn.",
+                "Trộn đều để cho các gia vị thấm sâu rồi cho vào tủ lạnh để trong khoảng 3 – 4 tiếng. Phần thịt vai băm, bạn làm thành hình tròn dẹt rồi đem nướng chín. Phần thịt ba thái miếng vừa ăn cũng vậy.",
+                "Cà rốt, su hào gọt vỏ rồi rửa sạch, để ráo. Cà rốt thái tròn mỏng, su hào thái vuông mỏng. Sau đó, cho chung vào một âu và cùng 1 chút muối ăn rồi xóc đều. Ngâm cà rốt, su hào với muối trong khoảng 15 – 20 phút. Sau đó, đem rửa sạch rồi để ráo nước. Cho ½ muỗng canh tỏi băm, ½ muỗng canh giấm, 2 muỗng canh đường rồi đảo đều đến khi đường tan rồi cho thêm chút ớt băm vào",
+                "Các loại rau thơm bạn đem ngâm với nước muối loãng trong chừng 10 – 15 phút. Sau đó, đem rửa sạch rồi cho ra rổ để ráo nước.",
+                "Làm nước dùng: Chuẩn bị một bát nhỏ, múc 10 thìa canh nước lọc và cho 2 thìa canh đường, 2 thìa canh nước mắm vào khuấy đều cho đến khi đường tan. Tiếp tục cho 3 muỗng canh nước cốt chanh, 1 muỗng canh đường, 1 muỗng cà phê tỏi băm, 1 muỗng cà phê ớt rồi khuấy đều lên."
+            ]
+        },
+        {
+            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Nguyên Bùi",
+            "name": "Thịt chó",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0a/OffHN_10_2008_1.jpg"
+            ],
+            "ingredients": [
+                "Chó"
+            ],
+            "steps": [
+                "Chó là bạn, không phải mày"
+            ]
+        },
+        {
+            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Nguyên Bùi",
             "name": "Canh chua",
-            "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/Foodimg/7a0dd01c-298f-11ea-bc42-3c15c2d9b720.jpg"]
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a0/Canhchua2.jpg"
+            ],
+            "ingredients": [
+                "Cá",
+                "Tôm",
+                "Cà chua",
+                "Đậu bắp",
+                "Me",
+                "Giá đỗ",
+                "Hành lá, rau ngổ",
+                "Gia vị: hành khô, tỏi, muối, hạt nêm, bột ngọt, đường, ớt bột, tiêu, nước mắm, dầu ăn."
+            ],
+            "steps": [
+                "Bỏ hết vô nấu lên"
+            ]
         },
         {
-            "post_id": 16,
             "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
             "username": "Nguyên Bùi",
-            "name": "So thu tu",
-            "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/Foodimg/c9f575ee-2994-11ea-bc42-3c15c2d9b720.jpg"]
+            "name": "Thịt chó",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0a/OffHN_10_2008_1.jpg"
+            ],
+            "ingredients": [
+                "Chó"
+            ],
+            "steps": [
+                "Chó là bạn, không phải mày"
+            ]
         },
         {
-            "post_id": 17,
             "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
             "username": "Nguyên Bùi",
-            "name": "So thu tu",
-            "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/Foodimg/cbd288c0-2994-11ea-bc42-3c15c2d9b720.jpg"]
+            "name": "Bún chả",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/06/Bun_cha.jpg"
+            ],
+            "ingredients": [
+                "500 gram thịt ba chỉ",
+                "400 gram thịt nạc vai",
+                "Chanh, ớt, tỏi, hành tím, đầu hành",
+                "Su hào, cà rốt",
+                "Gia vị: tiêu, nước hàng, xì dầu đen, dầu hào, nước mắm, dầu ăn, nước tương, mật ong",
+                "Rau thơm, bún"
+            ],
+            "steps": [
+                "Sơ chế: Thịt ba chỉ thái thành những miếng vừa ăn. Thịt nạc vai đem thái mỏng và băm rối. Hành tím, đầu hành, tỏi đập dập, băm nhuyễn rồi chia thành đôi, cho vào 2 phần thịt lợn.",
+                "Trộn đều để cho các gia vị thấm sâu rồi cho vào tủ lạnh để trong khoảng 3 – 4 tiếng. Phần thịt vai băm, bạn làm thành hình tròn dẹt rồi đem nướng chín. Phần thịt ba thái miếng vừa ăn cũng vậy.",
+                "Cà rốt, su hào gọt vỏ rồi rửa sạch, để ráo. Cà rốt thái tròn mỏng, su hào thái vuông mỏng. Sau đó, cho chung vào một âu và cùng 1 chút muối ăn rồi xóc đều. Ngâm cà rốt, su hào với muối trong khoảng 15 – 20 phút. Sau đó, đem rửa sạch rồi để ráo nước. Cho ½ muỗng canh tỏi băm, ½ muỗng canh giấm, 2 muỗng canh đường rồi đảo đều đến khi đường tan rồi cho thêm chút ớt băm vào",
+                "Các loại rau thơm bạn đem ngâm với nước muối loãng trong chừng 10 – 15 phút. Sau đó, đem rửa sạch rồi cho ra rổ để ráo nước.",
+                "Làm nước dùng: Chuẩn bị một bát nhỏ, múc 10 thìa canh nước lọc và cho 2 thìa canh đường, 2 thìa canh nước mắm vào khuấy đều cho đến khi đường tan. Tiếp tục cho 3 muỗng canh nước cốt chanh, 1 muỗng canh đường, 1 muỗng cà phê tỏi băm, 1 muỗng cà phê ớt rồi khuấy đều lên."
+            ]
         },
         {
-            "post_id": 18,
+            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Sang Phùng",
+            "name": "Gỏi cuốn",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/31/Vietnamese_salad_roll.jpg"
+            ],
+            "ingredients": [
+                "500g tôm",
+                "700g thịt ba rọi hoặc đùi (tùy thích mỡ nhiều hay nạc nhiều)",
+                "Bánh tráng",
+                "500g bún tươi",
+                "Tương hột xay",
+                "Xà-lách, rau sống, hẹ",
+                "Đồ chua, đậu phộng rang giã nhuyễn"
+            ],
+            "steps": [
+                "Rau sống rửa sạch, để ráo",
+                "Tôm rửa sạch, cho vào 1/2 muỗng cafe muối, 1 muỗng cafe đường, 1-2 muỗng canh rượu (không cần cho nước, tôm sẽ tự ra nước). Việc thêm gia vị giúp tôm đậm đà và không tanh. Đậy nắp, mở lửa nấu cho tôm chuyển đỏ, đảo đều. Vớt tôm ra rổ để ráo. Lột vỏ, xẻ đôi tôm, bỏ chỉ lưng.",
+                "Thịt cạo lông, rửa sạch, cho đun sôi nồi nước, thả vào 1 củ hành đập dập, cho thịt vào luộc chừng 20 phút là thịt chín, vớt thịt ra thau nước lạnh giúp thịt trắng và giòn.Thái thịt thành lắt mỏng.",
+                "Cuốn: Làm ướt bánh tráng, lót rau bên dưới, xếp bún, thịt, tôm, đặt cọng hẹ trang trí (vừa thơm, vừa đẹp). Cuộn chắc tay.",
+                "Làm tương: Phi thơm ít tỏi với dầu, cho tương hột xay vào xào, nêm đường cho bớt mặn."
+            ]
+        },
+        {
+            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Kiên Nguyễn",
+            "name": "Bún bò Huế",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/e7/B%C3%BAn_b%C3%B2_hu%C3%AA_close-up_-_Dakao_Hoang.jpg"
+            ],
+            "ingredients": [
+                "Xương đuôi bò: 1kg",
+                "Chân giò trước: 1 cái khoảng 800 gram",
+                "Thịt bò nạm: 400 gram",
+                "Chả lụa: 1 cây",
+                "Bún sợi to: 2.5kg",
+                "Hành tây: 2 củ, hành tím: 2 củ, sả: 1 bó, chanh, ớt tươi, mía lau: 1 cây",
+                "Mắm ruốc: 2 muỗng, bột hột điều dầu: 1 thìa, muối, nước mắm, mỡ, ớt bột, dầu ăn",
+                "Bắp chuối bào, hành lá, giá sống, ngò gai"
+            ],
+            "steps": [
+                "Mang chân giò heo cạo sạch lông và gỡ bỏ phần móng bên ngoài rồi rửa sạch. Thịt bò cũng rửa qua với nước. Chuẩn bị một âu nước rồi cho muối hột vào hòa tan. Sau đó, cho chân giò cùng thịt bò đã được sơ chế ở trên vào ngâm khoảng 1 – 2 tiếng để làm sạch hiệu quả.",
+                "Mía rửa sạch lớp vỏ bên ngoài, dùng dao chặt thành từng khúc khoảng chừng 3 đốt tay rồi chẻ làm tư. Sau đó, cho vào nồi đun cùng với 3 lít nước trong chừng 30 phút rồi vớt ra.",
+                "Đun 1 lít nước trong một nồi riêng rồi cho 2 muỗng canh mắm ruốc vào quậy đều. Khi nước sôi, bạn vớt hết bọt nổi trên mặt nước rồi tắt bếp, để nguội và đợi lắng nước trong.",
+                "Sả rửa sạch, dùng dao đập dập rồi chẻ làm 2. Sau đó, dùng dây lạt bó lại. Gừng và hành tím đem nướng cháy xém vỏ trên lửa than rồi cạo sạch và đập dập.",
+                "Chân giò sau khi ngâm với nước muối đủ thời gian thì vớt ra và rửa lại với nước lạnh. Sau đó, chặt thành những khúc vừa ăn.",
+                "Thắng dầu màu: Đặt một chảo nhỏ lên bếp, đổ 2 muỗng canh dầu ăn vào đun sôi. Sau đó, tắt bếp và cho hành tím băm nhuyễn cùng ớt bột vào phi vàng. Cuối cùng, vớt bỏ phần xác ớt bột ra để riêng.",
+                "Nấu nước dùng: Đặt nồi nước hầm mía lên bếp. Cho thêm ½ bó sả và ½ muỗng cafe muối cùng gừng, sả, hành và nước ruốc vào. Trụng xương đuôi bò qua nước sôi rồi cho vào nồi hầm nước mía ninh cùng phần thịt chân giò trong khoảng 1 – 2 tiếng. Bắp và nạm bò cuộn tròn chắc tay rồi dùng chỉ hoặc lạt buộc chặt lại và thả vào nồi nước dùng để nấu chín. Phần thịt nào chín thì bạn vớt ra trước, tránh để lâu thịt sẽ bị nhừ, ăn không ngon miệng. Cuối cùng, cho dầu màu vào và nêm nếm nước dùng cho vừa miệng rồi tắt bếp.",
+                "Cho bún, chân giò, thịt bò nạm thái mỏng, chả lụa cắt lát, hành lá, hành tây vào từng tô. Sau đó, dọn ra cùng một chén nước mắm, vài lát chanh và dĩa rau sống rồi mời mọi người thưởng thức."
+            ]    
+        },
+        {
             "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
             "username": "Nguyên Bùi",
-            "name": "Thit ide",
-            "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/Foodimg/177d44ea-2995-11ea-bc42-3c15c2d9b720.jpg"]
+            "name": "Thịt chó",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0a/OffHN_10_2008_1.jpg"
+            ],
+            "ingredients": [
+                "Chó"
+            ],
+            "steps": [
+                "Chó là bạn, không phải mày"
+            ]
+        },
+        {
+            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "username": "Nguyên Bùi",
+            "name": "Canh chua",
+            "img": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a0/Canhchua2.jpg"
+            ],
+            "ingredients": [
+                "Cá",
+                "Tôm",
+                "Cà chua",
+                "Đậu bắp",
+                "Me",
+                "Giá đỗ",
+                "Hành lá, rau ngổ",
+                "Gia vị: hành khô, tỏi, muối, hạt nêm, bột ngọt, đường, ớt bột, tiêu, nước mắm, dầu ăn."
+            ],
+            "steps": [
+                "Bỏ hết vô nấu lên",
+                "Ăn"
+            ]
         }
     ]
