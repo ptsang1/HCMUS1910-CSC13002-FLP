@@ -34,15 +34,17 @@ class User extends Component {
                         </div>
                         <div>
                             <h1>{this.state.user[0].fullname}</h1>
+                            <h2>{this.state.posts.length} posts</h2>
                         </div>
                     </div>
-                    {
+                    <div className="user_posts">{
+                        
               this.state.posts.map(item => (
-                <div key={item.key} className="user_posts">
+                <div key={item.key}>
                   <img className="post-img" src={item.img[0]} alt="" style={{ cursor: "pointer" }} />
                 </div>
               ))
-            }
+            }</div>
                     {/* <div className="col-sm-4 col-md-3 tab">
                         <ul id="myTab" className="nav nav-tabs nav-top-border mt-80" role="tablist">
                             <li className="nav-item"><a className="nav-link active" href="#description" data-toggle="tab">Bài đăng</a></li>

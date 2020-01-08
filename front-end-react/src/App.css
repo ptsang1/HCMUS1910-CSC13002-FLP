@@ -760,6 +760,8 @@ form button.remove:hover {
 .user_posts {
   display: grid;
   grid-template-columns: 300px 300px 300px;
+  grid-gap: 10px;
+  margin: 20px auto;
 }
 .user_posts .post-img {
   width: 300px;
