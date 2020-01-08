@@ -5,19 +5,57 @@ class SignUp extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            file: '',
+            imagePreviewUrl: '',
         };
     }
+    _handleImageChange(e) {
+        e.preventDefault();
 
+        let reader = new FileReader();
+        let file = e.target.files[0];
 
-
-
+        reader.onloadend = () => {
+            this.setState({
+                file: file,
+                imagePreviewUrl: reader.result
+            });
+        }
+        reader.readAsDataURL(file)
+    }
     render() {
+        let { imagePreviewUrl } = this.state;
+        let $imagePreview = null;
+        if (imagePreviewUrl) {
+            $imagePreview = (<div className="uploadImg" onChange={(e) => this._handleImageChange(e)}>
+                <img src={imagePreviewUrl} />
+                <input className="fileInput"
+                    type="file"
+                    onChange={(e) => this._handleImageChange(e)} />
+            </div>);
+        } else {
+            $imagePreview = (
+                <div className="uploadImg" onChange={(e) => this._handleImageChange(e)}>
+                    <div className="upload_content">
+                        <i className="fa fa-camera-retro fa-3x"></i>
+                        <input className="fileInput"
+                            type="file"
+                            onChange={(e) => this._handleImageChange(e)} />
+                    </div>
+                </div>);
+        }
         return (
             <div className="container_signup">
                 <div className="signup-content">
                     <div className="signup-image">
-                        <img src={require("./img/login.jpg")} alt="sign up image" />
+                        <div className="previewComponent">
+                            <form onSubmit={(e) => this._handleSubmit(e)}>
+                                {$imagePreview}
+                                {/* <input className="fileInput"
+                                type="file"
+                                onChange={(e) => this._handleImageChange(e)} /> */}
+                            </form>
+                        </div>
                         <p className="signup-question">Bạn đã có tài khoản?</p>
                         <a href="/login" className="signup-image-link">Đăng nhập với tài khoản của bạn</a>
                         <a href="/" className="signup-image-link">Tiếp tục sử dụng ẩn danh</a>
