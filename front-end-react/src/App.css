@@ -25,7 +25,7 @@ body {
 } */
 
 .card {
-  width: 456.14px;
+  width: 378.45px;
   box-shadow: rgba(0, 0, 0, 0.14902) 0px 2px 4px;
   display: flex;
   justify-content: center;
@@ -338,7 +338,7 @@ html {
     margin-bottom: 10px;
   }
   .post-img {
-    width: 456.14px;
+    width: 378.45px;
   }
   .post-body ul{
     padding: 0px;
@@ -651,6 +651,7 @@ form button.remove:hover {
 .avatar{
   width: 125px;
   height: 125px;
+  border-radius: 60%;
 }
 
 .nav-tabs{
@@ -756,3 +757,15 @@ form button.remove:hover {
   padding-left: 50px;
   padding-right: 50px;
 } */
+.user_posts {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+.user_posts .post-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+}
+

@@ -166,7 +166,7 @@ class Home extends Component {
           >
             {
               this.state.elements.map(item => (
-                <div key={item.key} className="post" style={{ height: `${item.img.height / item.img.width * 456.14 + 122}` }}>
+                <div key={item.key} className="post" style={{ height: `${item.img.height / item.img.width * 378.45 + 122}` }}>
                   <h2>{item.username}</h2>
                   <img className="post-img" src={item.img.src} alt="" onClick={() => this.togglePopup(item.key)} style={{ cursor: "pointer" }} />
                   <div className="post-body">

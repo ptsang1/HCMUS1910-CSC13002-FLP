@@ -24,7 +24,7 @@
             ]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Bún chả",
             "img": [
@@ -82,7 +82,7 @@
             ]    
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Canh chua",
             "img": [
@@ -103,7 +103,7 @@
             ]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Lẩu",
             "steps": ["Nấu","Dùng"],
@@ -120,7 +120,7 @@
         },
         
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Xôi lá cẩm",
             "steps": ["Mua xôi","Ăn"],
@@ -152,7 +152,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/1b1deaba-3146-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Rau muống xào tỏi",
             "steps": ["Xào rau chung với tỏi"],
@@ -176,7 +176,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/da48621c-3146-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Cháo trắng",
             "steps": ["Nấu cháo","Bỏ tôm khô vào","Dùng"],
@@ -184,7 +184,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/014cdfc0-3145-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Bún mộc Hà Nội",
             "steps": ["Mua","Ăn"],
@@ -192,7 +192,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/f76316e4-3146-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Bún mắm",
             "steps": ["Bún + Cá + Gia vị"],
@@ -224,7 +224,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/99b174a4-3147-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Bún chả Đà Nẵng",
             "steps": ["Mua về mà dùng đi ăn thôi hong làm nên hong bít"],
@@ -232,7 +232,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/ff65e7bc-3147-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "8cebdae8-320f-11ea-8830-02557972d8a6",
             "username": "Nguyên Bùi",
             "name": "Bánh đa cua",
             "steps": ["Muốn biết thêm thông tin liên hệ chủ quán 0357728803"],
