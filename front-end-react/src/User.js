@@ -9,12 +9,22 @@ class User extends Component {
     constructor(props) {
         super(props);
         this.state = {
+          user_id: '',
           user: {},
           posts: []
         }
     }
-    findUser = () => user_data.filter(item => item.userid === '8cebdae8-320f-11ea-8830-02557972d8a6')
-    findUsersPosts = () => data.filter(item => item.owner_id === '8cebdae8-320f-11ea-8830-02557972d8a6')
+
+    componentWillReceiveProps({ user_id }) {
+        console.log(user_id)
+        this.setState({
+            user: user_data.filter(item => item.userid === user_id),
+            posts: data.filter(item => item.owner_id === user_id)      
+           })
+      }
+
+    findUser = () => user_data.filter(item => item.userid === '089786d0-294e-11ea-8671-3c15c2d9b720')
+    findUsersPosts = () => data.filter(item => item.owner_id === '089786d0-294e-11ea-8671-3c15c2d9b720') 
     componentWillMount() {
         this.setState(state => ({
           user: this.findUser(),
@@ -32,11 +42,11 @@ class User extends Component {
                         <div className="imgContent">
                             <img className="avatar" src={this.state.user[0].avatarlink} />
                         </div>
-                        <div>
+                    </div>
+                    <div className="info">
                             <h1>{this.state.user[0].fullname}</h1>
                             <h2>{this.state.posts.length} posts</h2>
                         </div>
-                    </div>
                     <div className="user_posts">{
                         
               this.state.posts.map(item => (

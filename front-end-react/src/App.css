@@ -643,30 +643,32 @@ form button.remove:hover {
   background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
 }
 
-.mynav{
+/* .mynav{
   border-bottom: 1px solid #dee2e6;
   width: 75%;
-}
+} */
 
 .avatar{
-  width: 125px;
-  height: 125px;
+  display: flex;
+  width: 150px;
+  height: 150px;
   border-radius: 60%;
+  margin: 10px 385px;
 }
 
-.nav-tabs{
+/* .nav-tabs{
   width: 100%;
-}
+} */
 
 /* .nav{
   padding-left: 50px;
   padding-right: 50px;
 } */
 
-.nav-item{
+/* .nav-item{
   width: 50%;
   text-align: center;
-}
+} */
 
 .content{
   display: flex;
@@ -675,7 +677,7 @@ form button.remove:hover {
   justify-content: center;
   padding-top: 30px;
 }
-.tab{
+/* .tab{
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -683,35 +685,20 @@ form button.remove:hover {
   padding-top: 30px;
   max-width: 100%;
   width:60%;
-}
+} */
 
 .contentInfo{
-  width: 60%;
-  height: 30%;
   display: flex;
   align-self: center;
   justify-content: flex-start;
   justify-items: center;
+  background-image: url('./img/food-background.jpg');
+  background-position: center;
+  width: 78%;
 }
 
 .imgContent{
   display: flex;
-  padding: 0 50px 0 50px;
-}
-
-.imgPost{
-  width: 49%;
-  padding-top: 10px;
-}
-
-.tab-pane{
-  display: flex;
-  flex-direction: column;
-}
-
-.imgPostContent{
-  display: flex;
-  justify-content: space-between;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -750,7 +737,18 @@ form button.remove:hover {
   padding-right: 15px;
   padding-left: 15px;
 }
-
+.info {
+  margin: 20px 0px;
+  text-align: center;
+}
+.info h1 {
+  font-size: 30px;
+  margin-left: 0;
+}
+.info h2 {
+  font-size: 18px;
+  margin-left: 0;
+}
 /* .nav-link{
   padding-top: 0px;
   padding-right: 0px;
@@ -761,7 +759,7 @@ form button.remove:hover {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-gap: 10px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .user_posts .post-img {
   width: 300px;
@@ -769,5 +767,8 @@ form button.remove:hover {
   object-fit: cover;
   object-position: center;
   display: flex;
+  transition: transform .2s;
 }
-
+.user_posts .post-img:hover {
+  transform: scale(1.2); 
+}

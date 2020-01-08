@@ -1,10 +1,26 @@
 [
     {
-    "userid": "8cebdae8-320f-11ea-8830-02557972d8a6",
-    "email": "bmnguyen@gmail.com",
-    "roleid": 1,
-    "password": "$2b$12$JVjvJS/W7ogx4jccuo1.EuduzkN/WTfM5xHuz5X46pLpD3gU3Ydiy",
-    "avatarlink": "https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.0-9/21105618_263565820811396_1850906099143073225_n.jpg?_nc_cat=100&_nc_oc=AQkVabJyT5sMo7yQW5cgkXKddq1qh4sGRgKrhKe5b_4iH9G_zIyowSgKvQ3fU7Z7L_8&_nc_ht=scontent.fsgn5-5.fna&oh=82cb506c937e31c014896c24eeaa2820&oe=5E9BE43D",
-    "fullname": "Nguyên Bùi"
+        "userid": "8cebdae8-320f-11ea-8830-02557972d8a6",
+        "email": "bmnguyen@gmail.com",
+        "roleid": 1,
+        "password": "$2b$12$JVjvJS/W7ogx4jccuo1.EuduzkN/WTfM5xHuz5X46pLpD3gU3Ydiy",
+        "avatarlink": "https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.0-9/21105618_263565820811396_1850906099143073225_n.jpg?_nc_cat=100&_nc_oc=AQkVabJyT5sMo7yQW5cgkXKddq1qh4sGRgKrhKe5b_4iH9G_zIyowSgKvQ3fU7Z7L_8&_nc_ht=scontent.fsgn5-5.fna&oh=82cb506c937e31c014896c24eeaa2820&oe=5E9BE43D",
+        "fullname": "Nguyên Bùi"
+    },
+    {
+        "userid": "089786d0-294e-11ea-8671-3c15c2d9b720",
+        "email": "ptsang@gmail.com",
+        "roleid": 1,
+        "password": "$2b$12$JVjvJS/W7ogx4jccuo1.EuduzkN/WTfM5xHuz5X46pLpD3gU3Ydiy",
+        "avatarlink": "https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/11896017_526140257542762_1469607166356972249_n.jpg?_nc_cat=102&_nc_oc=AQl3gDVr-OX3Jud_l06txYGLY68bAQYTghFnkiOcIwdgcxpI0DZkTQrz3QNZqtnAnCI&_nc_ht=scontent.fsgn5-4.fna&oh=fdf088d5c399b91159d2d6c140708b2b&oe=5EA4C8CD",
+        "fullname": "Sang Phùng"   
+    },
+    {
+        "userid": "089786d0-320f-11ea-8830-02557972d8a6",
+        "email": "ntkien@gmail.com",
+        "roleid": 1,
+        "password": "$2b$12$JVjvJS/W7ogx4jccuo1.EuduzkN/WTfM5xHuz5X46pLpD3gU3Ydiy",
+        "avatarlink": "https://scontent.fsgn5-2.fna.fbcdn.net/v/t1.0-9/10394577_1588157674740464_1525624041555166260_n.jpg?_nc_cat=105&_nc_oc=AQn4TeUlRyoqQoDWwdk30f2yrWAh3x0p9t7A6hGZw8sWVqwyD2DR-GhaTRGYe1O9-A8&_nc_ht=scontent.fsgn5-2.fna&oh=53b5fddeb5f8db28bf02dfcf01fc6e3c&oe=5EA9E9AF",
+        "fullname": "Kiên Nguyễn"
     }
 ]

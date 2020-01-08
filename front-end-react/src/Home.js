@@ -46,7 +46,8 @@ class Home extends Component {
       dataPopUp: {},
       isLiked: false,
       i: 0,
-      searchResults: []
+      searchResults: [],
+      getUser: '',
     };
   }
 
@@ -61,6 +62,7 @@ class Home extends Component {
       ingredients: item.ingredients,
       steps: item.steps,
       isLiked: false,
+      id: item.owner_id
     };
   });
 
@@ -104,6 +106,15 @@ class Home extends Component {
       dataPopUp: this.state.elements.map(item => item.isLiked = item.key === key ? item.key === key && !item.isLiked : item.isLiked),
     });
   }
+
+  goToPersonalPage = (key) => {
+    this.setState({
+      getUser: this.state.elements.filter(item => item.key === key)[0].id
+    });
+    console.log(this.state.getUser)
+    window.location.href="/user";
+  }
+
 
   togglePopup = (key) => {
     this.setState({
@@ -167,7 +178,7 @@ class Home extends Component {
             {
               this.state.elements.map(item => (
                 <div key={item.key} className="post" style={{ height: `${item.img.height / item.img.width * 378.45 + 122}` }}>
-                  <h2>{item.username}</h2>
+                  <h2 onClick={() => this.goToPersonalPage(item.key)} style={{ cursor: "pointer" }}>{item.username}</h2>
                   <img className="post-img" src={item.img.src} alt="" onClick={() => this.togglePopup(item.key)} style={{ cursor: "pointer" }} />
                   <div className="post-body">
                     <ul className="post-react flex flex-wrap align-items-center">

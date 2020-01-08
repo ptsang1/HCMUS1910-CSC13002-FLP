@@ -47,7 +47,7 @@
             ]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "089786d0-320f-11ea-8830-02557972d8a6",
             "username": "Kiên Nguyễn",
             "name": "Xôi chiên",
             "steps": ["Mua xôi","Đem về chiên lên"],
@@ -55,7 +55,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/692d77f2-3146-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "089786d0-320f-11ea-8830-02557972d8a6",
             "username": "Kiên Nguyễn",
             "name": "Bún bò Huế",
             "img": [
@@ -111,7 +111,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/88aa9f26-3144-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "089786d0-320f-11ea-8830-02557972d8a6",
             "username": "Kiên Nguyễn",
             "name": "Xôi đỗ xanh",
             "steps": ["Mua","Dùng"],
@@ -136,7 +136,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/cce765b0-3145-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "089786d0-320f-11ea-8830-02557972d8a6",
             "username": "Kiên Nguyễn",
             "name": "Cháo lòng",
             "steps": ["Nấu cháo với huyết","Thêm lòng heo"],
@@ -208,7 +208,7 @@
             "img": ["https://hnag.s3-ap-southeast-1.amazonaws.com/FoodImage/539af5f8-3147-11ea-bdf6-3c15c2d9b720.jpg"]
         },
         {
-            "owner_id": "089786d0-294e-11ea-8671-3c15c2d9b720",
+            "owner_id": "089786d0-320f-11ea-8830-02557972d8a6",
             "username": "Kiên Nguyễn",
             "name": "Bún thịt nướng",
             "steps": ["Nướng thịt chín","Làm nước mắm ngon","Dùng chung với bún và rau"],
