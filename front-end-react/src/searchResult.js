@@ -35,7 +35,7 @@ class Popup extends React.Component {
   }
 }
 
-class Home extends Component {
+class SearchResults extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,29 +45,68 @@ class Home extends Component {
       showPopUp: false,
       dataPopUp: {},
       isLiked: false,
-      i: 0,
       searchResults: []
     };
   }
+//   generateElements = (keyword) => [...Array(10).keys()].map((item, index) => {
+//     this.setState.searchResults = data.filter(item => this.searchFor(keyword, item))
+//     const newImg = new Image()
+//     const imgs = this.state.searchResults.map(item => item.img)
+//     newImg.src = imgs[index][0]
+//     return {
+//       key: shortid.generate(),
+//       img: newImg,
+//       username: this.state.searchResults[index].username,
+//       name: this.state.searchResults[index].name,
+//       ingredients: this.state.searchResults[index].ingredients,
+//       steps: this.state.searchResults[index].steps,
+//       isLiked: false,
+//     };
+//   });
 
-  generateElements = (i) => data.slice(i * 10, i * 10 + 10).map((item, index) => {
+//   componentWillMount(keyword) {
+//     this.setState(state => ({
+//       elements: state.elements.concat(this.generateElements(keyword))
+//     }))
+//   }
+
+//   componentDidMount() {
+//     this.setState(state => ({
+//       searchResults: state.elements
+//     }))
+//   }
+
+//   componentWillUnmount = () => {
+//     this.setState({
+//       elements: []
+//     })
+//   }
+
+//   loadMore = (keyword) => setTimeout(() => this.setState(state => ({
+//     elements: state.elements.concat(this.generateElements(keyword)),
+//   })), 2500);
+
+  generateElements = () => [...Array(10).keys()].map((item, index) => {
+    console.log();
     const newImg = new Image()
-    newImg.src = item.img[0]
+    const imgs = searchData.map(item => item.img)
+    newImg.src = imgs[index][0]
     return {
       key: shortid.generate(),
       img: newImg,
-      username: item.username,
-      name: item.name,
-      ingredients: item.ingredients,
-      steps: item.steps,
+      username: searchData[index].username,
+      name: searchData[index].name,
+      ingredients: searchData[index].ingredients,
+      steps: searchData[index].steps,
       isLiked: false,
     };
   });
 
   componentWillMount() {
     this.setState(state => ({
-      elements: state.elements.concat(this.generateElements(0))
-    }))  }
+      elements: state.elements.concat(this.generateElements())
+    }))
+  }
 
   componentDidMount() {
     this.setState(state => ({
@@ -81,23 +120,9 @@ class Home extends Component {
     })
   }
 
-  loadMore = () => {
-    const element = this.generateElements(this.state.i + 1);
-    if (element.length > 0) {
-      setTimeout(() => {
-        this.setState(state => ({
-          elements: state.elements.concat(element),
-          i: state.i + 1,
-        }))
-      }, 2500);
-    }
-    else {
-      this.setState({
-        hasMore: false
-      })
-    }
-  }
-
+  loadMore = () => setTimeout(() => this.setState(state => ({
+    elements: state.elements.concat(this.generateElements()),
+  })), 2500);
 
   clickLike = (key) => {
     this.setState({
@@ -131,24 +156,23 @@ class Home extends Component {
   searchFor = (keyword, item) => {
     return this.change_alias(item.name).toLowerCase().includes(this.change_alias(keyword).toLowerCase());
   }
-
-  componentWillReceiveProps({ keyword }) {
+  
+  componentWillReceiveProps({keyword}) {
     this.setState({
-      searchResults: keyword === '' ? this.state.elements : this.state.elements.filter(item => this.searchFor(keyword, item) === true)
+      searchResults : keyword === '' ? this.state.elements : this.state.elements.filter(item => this.searchFor(keyword, item) === true)
     })
   }
 
   render() {
     // console.log(this.state.elements)
-    // const { keyword } = this.props
-    // console.log(keyword)
+      // const { keyword } = this.props
+      // console.log(keyword)
 
     // const searchResults = keyword === '' ? this.state.elements : this.state.elements.filter(item => this.searchFor(keyword, item) === true)
 
-    // const { searchResults } = this.state
+    const {searchResults} = this.state
     // console.log('searchResults', searchResults)
     return (
-
       <div>
         <div className="container">
           {this.state.elements ? (<Masonry
@@ -198,4 +222,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default SearchResults;
