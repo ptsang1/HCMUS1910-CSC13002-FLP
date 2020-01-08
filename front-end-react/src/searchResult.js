@@ -48,56 +48,36 @@ class SearchResults extends Component {
       searchResults: []
     };
   }
-//   generateElements = (keyword) => [...Array(10).keys()].map((item, index) => {
-//     this.setState.searchResults = data.filter(item => this.searchFor(keyword, item))
+
+//   generateElements = () => [...Array(10).keys()].map((item, index) => {
+//     console.log();
+//     let searchData = data.filter(item => this.searchFor(keyword, item) === true)
 //     const newImg = new Image()
-//     const imgs = this.state.searchResults.map(item => item.img)
+//     const imgs = searchData.map(item => item.img)
 //     newImg.src = imgs[index][0]
 //     return {
 //       key: shortid.generate(),
 //       img: newImg,
-//       username: this.state.searchResults[index].username,
-//       name: this.state.searchResults[index].name,
-//       ingredients: this.state.searchResults[index].ingredients,
-//       steps: this.state.searchResults[index].steps,
+//       username: searchData[index].username,
+//       name: searchData[index].name,
+//       ingredients: searchData[index].ingredients,
+//       steps: searchData[index].steps,
 //       isLiked: false,
 //     };
 //   });
 
-//   componentWillMount(keyword) {
-//     this.setState(state => ({
-//       elements: state.elements.concat(this.generateElements(keyword))
-//     }))
-//   }
-
-//   componentDidMount() {
-//     this.setState(state => ({
-//       searchResults: state.elements
-//     }))
-//   }
-
-//   componentWillUnmount = () => {
-//     this.setState({
-//       elements: []
-//     })
-//   }
-
-//   loadMore = (keyword) => setTimeout(() => this.setState(state => ({
-//     elements: state.elements.concat(this.generateElements(keyword)),
-//   })), 2500);
-
   generateElements = () => [...Array(10).keys()].map((item, index) => {
     console.log();
     const newImg = new Image()
-    const imgs = searchData.map(item => item.img)
+    const imgs = data.map(item => item.img)
     newImg.src = imgs[index][0]
     return {
       key: shortid.generate(),
       img: newImg,
-      username: searchData[index].username,
-      name: searchData[index].name,
-      ingredients: searchData[index].ingredients,
-      steps: searchData[index].steps,
+      username: data[index].username,
+      name: data[index].name,
+      ingredients: data[index].ingredients,
+      steps: data[index].steps,
       isLiked: false,
     };
   });
@@ -189,7 +169,7 @@ class SearchResults extends Component {
             loadMore={this.loadMore}
           >
             {
-              this.state.elements.map(item => (
+              searchResults.map(item => (
                 <div key={item.key} className="post" style={{ height: `${item.img.height / item.img.width * 456.14 + 122}` }}>
                   <h2>{item.username}</h2>
                   <img className="post-img" src={item.img.src} alt="" onClick={() => this.togglePopup(item.key)} style={{ cursor: "pointer" }} />
