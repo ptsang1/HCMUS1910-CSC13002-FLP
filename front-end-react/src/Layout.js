@@ -7,37 +7,18 @@ import WriteRecipe from './WriteRecipe';
 import User from './User';
 import Nav from './Nav';
 
-class Layout extends Component {
-  state = {
-    keyword: '',
-    user_id: ''
-  }
-
-  handleSearch = (keyword) => {
-    this.setState({
-      keyword
-    })
-  }
-
-  goToPersonalPage = (user_id) => {
-    this.setState({
-      user_id
-    })
-  }
-
-  render() {
-    return (
-      <div>
-        <Nav handleSearch={this.handleSearch}/>
-          <Switch>
-            <Route path="/" exact render={() => <Home keyword={this.state.keyword}/>} />
-            <Route path="/searchresults" exact render={() => <SearchResult keyword={this.state.keyword} />} />
-            <Route path="/writerecipe" component={WriteRecipe} />
-            <Route path="/user" exact render={() => <User user_id={this.state.user_id}/>} />
-          </Switch>
-      </div>
-    )
-  }
+function Layout(){
+  return (
+    <div>
+      <Nav />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/searchresults" exact component={SearchResult} />
+        <Route path="/writerecipe" component={WriteRecipe} />
+        <Route path="/user" exact component={User} />
+      </Switch>
+    </div>
+  )
 }
 
 export default Layout;

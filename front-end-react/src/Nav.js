@@ -17,8 +17,7 @@ class Nav extends React.Component {
 
   onClick = (e) => {
     e.preventDefault();
-    this.props.handleSearch(this.state.keyword);
-    // window.location.href="/searchresults";
+    window.location.href="/searchresults?keyword=" + this.state.keyword;
   }
 
   render() {

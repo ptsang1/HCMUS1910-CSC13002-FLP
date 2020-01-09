@@ -9,52 +9,60 @@ class User extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          user_id: '',
-          user: {},
-          posts: []
+            user_id: '',
+            user: {},
+            posts: []
         }
     }
 
-    componentWillReceiveProps({ user_id }) {
-        console.log(user_id)
-        this.setState({
-            user: user_data.filter(item => item.userid === user_id),
-            posts: data.filter(item => item.owner_id === user_id)      
-           })
-      }
+    // componentWillReceiveProps({ user_id }) {
+    //     console.log(user_id)
+    //     this.setState({
+    //         user: user_data.filter(item => item.userid === user_id),
+    //         posts: data.filter(item => item.owner_id === user_id)      
+    //        })
+    //   }
 
-    findUser = () => user_data.filter(item => item.userid === '089786d0-294e-11ea-8671-3c15c2d9b720')
-    findUsersPosts = () => data.filter(item => item.owner_id === '089786d0-294e-11ea-8671-3c15c2d9b720') 
+    findUser = () => {
+        const params = new URL(window.location.href).searchParams;
+        const user_id = params.get('id');
+        return user_data.filter(item => item.userid === user_id)[0] 
+    }
+    findUsersPosts = () => {
+        const params = new URL(window.location.href).searchParams;
+        const user_id = params.get('id');
+       return data.filter(item => item.owner_id === user_id)
+    }
     componentWillMount() {
         this.setState(state => ({
-          user: this.findUser(),
-          posts: this.findUsersPosts()
-        })) 
+            user: this.findUser(),
+            posts: this.findUsersPosts()
+        }))
     }
 
 
     render() {
-        console.log(this.state.posts)
+        
         return (
             <div className="container">
                 <div className="content">
                     <div className="contentInfo">
                         <div className="imgContent">
-                            <img className="avatar" src={this.state.user[0].avatarlink} />
+                            <img className="avatar" src={this.state.user.avatarlink} />
                         </div>
                     </div>
                     <div className="info">
-                            <h1>{this.state.user[0].fullname}</h1>
-                            <h2>{this.state.posts.length} posts</h2>
-                        </div>
+                        <h1>{this.state.user.fullname}</h1>
+                        <h2>{this.state.posts.length} posts</h2>
+                    </div>
                     <div className="user_posts">{
-                        
-              this.state.posts.map(item => (
-                <div key={item.key}>
-                  <img className="post-img" src={item.img[0]} alt="" style={{ cursor: "pointer" }} />
-                </div>
-              ))
-            }</div>
+
+                        this.state.posts.map(item => (
+                            <div key={item.key}>
+                                <img className="post-img" src={item.img[0]} alt="" style={{ cursor: "pointer" }} />
+                            </div>
+                        ))
+                    }</div>
                     {/* <div className="col-sm-4 col-md-3 tab">
                         <ul id="myTab" className="nav nav-tabs nav-top-border mt-80" role="tablist">
                             <li className="nav-item"><a className="nav-link active" href="#description" data-toggle="tab">Bài đăng</a></li>
